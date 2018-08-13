@@ -1,0 +1,22 @@
+doctype html
+head
+  title DSMC: #{title}
+  include meta.pug
+
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
+  link(href="https://fonts.googleapis.com/css?family=Archivo", rel="stylesheet")
+  //STYLES
+  link(rel="stylesheet", href="/styles/app.css")
+  link(rel="stylesheet", href="/styles/importer.css")
+  //STYLES END
+body
+  include nav.pug
+  
+  block content
+
+  include footer.pug
+  //SCRIPTS
+  script(src="/dependencies/sails.io.js")
+  script(src="/js/app.js")
+  //SCRIPTS END
+  script(defer='', src='https://use.fontawesome.com/releases/v5.1.0/js/all.js')
