@@ -1,0 +1,21 @@
+extends ../../layouts/layout.pug
+
+block content
+  .coloumns
+    .coloumn
+      h1.title.is-pulled-left #{title}
+    .coloumn
+      a.button.is-primary.is-pulled-right(href="/blog/new") New Blog
+  each blog in blogs
+    section.section
+      .container
+        .card
+          header.card-header
+            p.card-header-title #{blog.title}
+          .card-content
+            .content #{blog.content}
+          footer.card-footer
+            a.card-footer-item(href="/blog/show") Show
+            a.card-footer-item(href="/blog/edit") Edit
+            a.card-footer-item(href="blog/delete") Delete
+
