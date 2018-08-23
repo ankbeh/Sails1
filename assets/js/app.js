@@ -7,7 +7,7 @@ $(document).ready( () => {
       type: 'DELETE',
       url: '/blog/delete/'+ id,
       success: function(response) {
-        location.reload(true);
+        console.log("success");
       },
       error: function(err) {
         console.log(err);

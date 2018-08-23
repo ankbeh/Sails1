@@ -1,3 +1,4 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"$$indexCreated":{"fieldName":"title","unique":true,"sparse":false}}
-{"_csrf":"uZyX1ztJ-VGKSY9qoTIMt8_PYuM5vvbiFlJU","title":"4234234","content":"23425423","createdAt":1534534934150,"updatedAt":1534534934150,"id":5,"_id":5}
+{"title":"345345435","content":"34534534w5","createdAt":1535039604594,"updatedAt":1535039604594,"id":1,"_id":1}
+{"$$deleted":true,"_id":1}

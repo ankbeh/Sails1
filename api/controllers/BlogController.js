@@ -137,13 +137,13 @@ module.exports = {
     id = req.param('id');
     if(!id) return res.badRequest("No Id Provided");
 
-    Blog.findOne(id).exec( (err, blog) => {
+    await Blog.findOne(id).exec( (err, blog) => {
       if (err) return res.serverError(err);
       if (!blog) return res.notFound("The data dosent exists");
 
       Blog.destroy(id).exec( (err) => {
         if (err) return res.serverError(err);
-        return console.log("success");
+        return res.redirect("/");
       });
     });
   },
