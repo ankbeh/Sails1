@@ -2,6 +2,7 @@
 
 A [Sails v1](https://sailsjs.com) application
 
+<<<<<<< HEAD
 
 ### Tasks Ahead
 
