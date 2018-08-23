@@ -1,3 +1,12 @@
 extends ../../layouts/layout.pug
 
 block content
+  section.section
+    .container
+      h1.title #{blog.title}
+      .card
+        .card-content
+          .content #{blog.content}
+        footer.card-footer
+          a.card-footer-item(href="/blog/edit/"+ blog.id) Edit
+          a.card-footer-item.delete-blog(data-id= blog.id,href="#") Delete

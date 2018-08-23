@@ -25,12 +25,17 @@ module.exports.routes = {
   ***************************************************************************/
 
   'get /':  'indexController.index',
-  'get /blogs': 'BlogController.index',
+
+  //Blog Controlller
   'get /blog/new': 'BlogController.new',
   'post /blog/create': 'BlogController.create',
-  'get /blog/edit/:id?': 'BlogController.read1',
+  //find one or all or search
+  'get /blogs': 'BlogController.find',
+  'get /blog/show/:id?': 'BlogController.find',
+  'get /blog/edit/:id?': 'BlogController.find',
+
   'patch /blog/update/:id?': 'BlogController.update',
-  'delete /blog/create/destroy/:id?': 'BlogController.destroy',
+  'delete /blog/delete/:id?': 'BlogController.destroy',
 
   /***************************************************************************
   *                                                                          *
