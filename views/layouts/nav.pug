@@ -1,0 +1,23 @@
+nav.navbar.is-primary
+    .navbar-brand
+        a.navbar-item(href="/")
+            img(src="images/road-roller.png")
+            b Construction
+        .navbar-burger.buger(data-target="hNav")
+          span
+          span
+          span
+    #hNav.navbar-menu
+        .navbar-start
+            a.navbar-item(href="/blogs")
+                span Blogs
+            a.navbar-item(href="/todos")
+                span Todo
+        .navbar-end
+            .navbar-item
+                .field.is-grouped
+                    p.control
+                        a.button.is-link(href="#") Login
+                    p.control
+                        a.button.is-success(href="#") Sign-Up
+

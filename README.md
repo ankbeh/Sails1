@@ -1,12 +1,15 @@
 # s-4
 
-a [Sails v1](https://sailsjs.com) application
+A [Sails v1](https://sailsjs.com) application
 
-Tasks Ahead
+
+### Tasks Ahead
+
 + Blogs
-+ ToDo
-+ User Sign-In
++ To-Do
++ Users
 + Blog Comments
 
-Task Completed
+
+### Completed
 + Blogs

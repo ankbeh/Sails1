@@ -1,0 +1,7 @@
+{
+    "verbose":true,
+    "nodemonConfig": {
+        "ignore": ["test/*", "docs/*"],
+        "delay": "2500"
+    }
+}

@@ -1,0 +1,20 @@
+extends ../../layouts/layout.pug
+
+block content
+  h1.title #{title}
+  .coloumns.is-primary
+    form(action="/blog/update/"+blog.id , method="patch", if-match="*")
+      input(type="hidden", name="_csrf", value=_csrf)
+      .field
+        .label Title
+        .control
+          input.input(name="title",type="text", placeholder="Blog Title", value= blog.title)
+      .field
+        .label Message
+        .control
+          textarea.textarea(name="content",placeholder="Enter blog content..") #{blog.content}
+      .field.is-grouped
+        .control
+          button.button.is-link(type="submit") Submit
+        .control
+          a.button.is-danger(href="/blogs") Cancle
